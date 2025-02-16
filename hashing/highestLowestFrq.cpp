@@ -9,4 +9,14 @@ int main()
     int size = sizeof(array) / sizeof(array[0]);
     int maxFrq;
     int minFrq;
+    unordered_map<int, int> mp;
+
+    for (int i = 0; i < size; i++)
+    {
+        mp[array[i]]++;
+    }
+    for (auto it : mp)
+    {
+        cout << it.first << "-->" << it.second << endl;
+    }
 }

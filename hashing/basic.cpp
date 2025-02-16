@@ -1,4 +1,4 @@
-#include <bits/stdc++.h>
+
 #include <iostream>
 using namespace std;
 
@@ -11,6 +11,8 @@ int main()
     for (int i = 0; i < n; i++)
     {
         hash[arr[i]] += 1;
+        // hash[arr[0]]+1;
+        // hash[1]+=1;
     }
 
     int number;
